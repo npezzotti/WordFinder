@@ -1,18 +1,7 @@
 .App {
   text-align: center;
+  justify-content: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,16 +12,160 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.main {
+  display: flex;
+  align-content: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.header {
+  height:100%;
+  margin: 0 auto 15px auto;
+}
+.title {
+  text-decoration: none;
+  color: black;
+  margin: 200px auto 15px auto;
+}
+.title :hover {
+  text-decoration: underline;
+}
+.home {
+  margin: 25px auto 15px auto;
+}
+.search-header {
+  font-size: 20px;
+  margin: 50px auto 10px auto;
+}
+input[type=text] {
+  font-family: 'Mansalva', cursive;
+  font-size: 18px;
+  width: 200px;
+  height: 25px;
+  border: solid;
+}
+.button {
+  font-size: 20px;
+  margin: auto 10px;
+  border: solid;
+}
+.button:hover {
+  background-color: rgb(177, 177, 177);
+}
+.form {
+  margin: 25px auto 0 auto;
+}
+.quote {
+  height: 100px;
+  width: 600px;
+  margin: 100px auto 0 auto;
+  font-style: italic;
+  font-size: 24px;
+}
+.words-container {
+  height: 400px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.word-container {
+  margin: 25px 25px;
+  height:50px;
+  width:150px;
+  padding-top: 30px;
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+  background-image: url(./notecard.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all .2s ease-in-out; 
+}
+.word-container:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.words {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Mansalva', cursive;
+}
+.words :hover {
+  text-decoration: underline;
+}
+.word-list {
+  font-family: 'Mansalva', cursive;
+  margin: 75px auto;
+  width: 600px;
+  height: auto;
+  background-image: url(./notecard.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+}
+.definitions-container {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.word-title {
+  text-decoration: underline;
+  padding: 5px;
+}
+.definitions {
+  list-style-type: decimal;
+  margin: 15px auto;
+}
+.part-of-speech {
+  font-weight: bold;
+  font-style: italic;
+}
+.definition {
+  margin: 0 auto;
+  padding: 5px;
+}
+/* .footer {
+  background-color: #f1f1f1;
+  font-size: 12px;
+  text-align: center;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 50px; 
+  width: 100%;
+}
+.footer-text {
+  font-size: 14px;
+  font-style: bold;
+} */
+@media only screen and (max-width: 600px) {
+  .title{
+    margin: 150px auto 15px auto;
   }
-  to {
-    transform: rotate(360deg);
+  .home {
+    margin: 100px auto 15px auto;
+  }
+  .quote {
+    width: 300px;
+    font-size: 18px;
+  }
+  .results-header {
+    font-size: 18px;
+    margin: 25px auto;
+  }
+  .words-container {
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: nowrap;
+  }
+  .definitions-container {
+    width: 300px;
+    margin: 50px auto;
   }
 }
