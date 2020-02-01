@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import Home from './components/Home'
-import WordList from './components/WordList'
-import WordDefinitions from './components/WordDefinitions'
-import Header from './components/Header'
-// import Footer from './components/Footer'
-import NotFound from './components/NotFound'
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Home from './components/Home';
+import WordList from './components/WordList';
+import WordDefinitions from './components/WordDefinitions';
+import Header from './components/Header';
+import NotFound from './components/NotFound';
 
 class App extends Component {
   constructor(props) {
@@ -43,7 +42,6 @@ class App extends Component {
             </div>
             <Route component={NotFound} />
           </Switch>
-          {/* <Footer /> */}
         </main>
       </div>
     )
